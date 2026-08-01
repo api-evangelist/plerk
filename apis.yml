@@ -1,7 +1,27 @@
 aid: plerk
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/plerk.png
 name: Plerk
-description: Plerk is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Plerk was a Mexican fintech startup offering an employee-benefits and perks
+  platform ("beneficios para colaboradores") for companies in Mexico, backed by
+  500 Global. During 2023 Plerk merged with minu to consolidate the employee
+  benefits offering in Mexico, and the standalone Plerk product was wound down.
+  Its primary domain plerk.com no longer resolves (DNS fully lapsed; last web
+  archive May 2023) and plerk.io redirects to the now-defunct plerk.com. Support
+  was handled at soporte@plerk.io. This profile is retained as a defunct/acquired
+  lead; the surviving product and any API surface live under minu. No live
+  developer portal, API, SDK, or documentation surface exists for Plerk.
 url: https://raw.githubusercontent.com/api-evangelist/plerk/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +29,21 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-reason: merged-into-minu-2023
+x-successor: minu
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Employee Benefits
+- Fintech
+- Mexico
+- Human Resources
+- Perks
+- Defunct
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +53,11 @@ maintainers:
 common:
 - type: Website
   url: https://plerk.com
+- type: Successor
+  name: minu (merged 2023)
+  url: https://raw.githubusercontent.com/api-evangelist/minu/refs/heads/main/apis.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
